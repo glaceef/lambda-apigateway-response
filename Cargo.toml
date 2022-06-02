@@ -1,0 +1,25 @@
+[package]
+name = "lambda-apigateway-response"
+description = "Response object for AWS Lambda with API Gateway"
+version = "0.1.0"
+edition = "2021"
+authors = ["glaceef <glaceef@gmail.com>"]
+license = "MIT OR Apache-2.0"
+homepage = "https://github.com/glaceef"
+repository = "https://github.com/glaceef/lambda-apigateway-response"
+documentation = "https://docs.rs/lambda-apigateway-response/"
+keywords = ["AWS", "Lambda", "API", "APIGateway", "Response"]
+categories = ["data-structures"]
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http = "0.2.7"
+lambda_runtime = "0.5.1"
+serde = { version = "1.0.137", features = ["derive"] }
+serde_json = "1.0.79"
+tokio = { version = "1", features = ["full"] }
+
+[[example]]
+name = "hello_world"
